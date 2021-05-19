@@ -30,9 +30,11 @@ for (var i = 3; i<6; i++) {
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
-for (var i = 2; i<12; i+2) {
+for (var i = 2; i<11; i+=2) {
   console.log(i);
-}//Currently a work in progress. I'm stuck in an infinite loop.
+}//Fixed the loop by fixing the i+2 index to i+=2. I also changed the comparison index
+//to i<12 to i<11. I guess the second fix wasn't necessary to fix the infinite loop but
+//I guess it just helps me to keep things tight. 
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
 console.log('STRETCH: countdown from 5 to 0');
