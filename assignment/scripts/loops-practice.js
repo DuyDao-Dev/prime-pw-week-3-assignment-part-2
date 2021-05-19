@@ -59,12 +59,44 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
-//while (stars = 'Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb') {
-  console.log('We got stars!');
-}//while puts me in an infinite loop. I don't know how to end it at the moment.
+let i = 0;
+  while (i < stars.length) {
+    console.log(stars[i]);
+    i++;
+}//So I ended up getting some help from some friends because I got stuck. I did try the route
+//of creating a new variable earlier but I couldn't figure out how to make it work because
+//I ended up getting stuck in a loop again. My friend hinted at something I did in an earlier code
+//with increments. I tried that which kinda fixed my issue where it listed 4/5 of the star names but
+//not the first. It was because I put the i++ before the console.log versus after. He explained by
+//putting the i++ first forces it to skip the first star because I am forcing it to start at 1
+//in the array and not 0. When I moved the i++ underneath the console.log, it fixed the problem.
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
+let count = ['0', '1', '2', '3', '4', '5'];
+let x = 0;
+  while (x < count.length) {
+    console.log(count[x]);
+    x++;
+    }
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
 console.log('count backwards from 10 to 5');
+let counting = ['10', '9', '8', '7', '6', '5'];
+let y = 10;
+  while (y > 4) {
+  console.log(y);
+  y--;
+}
+
+
+//***Extra*** (trying to debug for myself. Friend gave me a suggestion on how to debug throughout
+//the original problem code I produced.)
+let counting1 = ['10', '9', '8', '7', '6', '5'];
+let z = 7;
+  while (z > counting1.length) {
+console.log('***start**');
+  console.log("index:", z);
+console.log("value using index:", counting1[z]);console.log('***end**');
+  z--;
+}
