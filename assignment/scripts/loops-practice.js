@@ -51,7 +51,7 @@ console.log('Some stars:');
 for (let name of stars) {
   console.log(name);
 }//Not sure how this works exactly. What I think is happening is the of statement allows
-//the name variable to list the stars array. 
+//the name variable to list the stars array.
 //Referenced https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 
 // 3. While loops
@@ -59,7 +59,9 @@ console.log('---- 3. While loop ----');
 
 // 3.a. TODO: Write a while loop to console.log each star in the 'stars' array
 console.log('Some stars using while:');
-
+//while (stars = 'Polaris', 'Gacrux', 'Formalhaut', 'Rigel', 'Deneb') {
+  console.log('We got stars!');
+}//while puts me in an infinite loop. I don't know how to end it at the moment.
 
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
